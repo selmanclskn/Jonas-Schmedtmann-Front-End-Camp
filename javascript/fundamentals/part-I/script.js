@@ -182,4 +182,81 @@ let BMIJohn = massJohn / heightJohn;
 
 console.log(BMIMark, BMIJohn);
 console.log(BMIMark < BMIJohn);
+
+
+const firstName = 'Selman';
+const job = 'Freelance';
+const birthYear = 1996;
+const year = 2025;
+
+const itsme =
+  "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+
+console.log(itsme);
+
+const itsmeNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(itsmeNew);
+
+console.log(`Just a regular string...`);
+console.log(
+  'String \n\
+multiple \n\
+lines'
+);
+
+console.log(`String
+multiple,
+lines`);
+
+let country = 'Türkiye';
+let language = 'Türkçe';
+let continent = 'Avrupa';
+
+const turkey = `${country}, ${continent}'da bulunan ve ${language} dilini kullanan bir ülkedir.`;
+console.log(turkey);
+
+
+const age = 15;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  console.log('Can drive a car!');
+} else {
+  const yersLeft = 18 - age;
+  console.log(`Can't drive a car yet! Wait for ${yersLeft} years more`);
+}
+
+const birthYear = 2012;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+
+//  # Assigment: taking decisions
+if (population > 33) {
+  console.log(`${country}'s population is above average`);
+} else {
+  console.log(
+    `${country}'s population is ${33 - population} million
+    below average`
+  );
+}
+
+// CHALLENGE #2
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+// Write your code below. Good luck! 🙂
+
+console.log(`Mark's BMI (${BMIMark}) heigher than John's (${BMIJohn})!`);
 */
