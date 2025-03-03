@@ -225,4 +225,119 @@ if (height) {
 } else {
   console.log('Height is UNDEFINED');
 }
+
+
+const age = '18';
+if (age === 18) console.log('You just became an adult :D (strict)');
+
+if (age == 18) console.log('You just became an adult :D (loose)');
+
+const favorite = prompt("What's your favorite number?");
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite == 13) {
+  console.log('Cool! 13 is an amazing number!');
+} else if (favorite == 7) {
+  console.log('7 is also a cool number');
+} else {
+  console.log('Number is not 13 or 7');
+}
+
+if (favorite !== 29) console.log('Why not 29?');
+
+
+const hasDriverLincense = true;
+const hasGoodVision = true;
+
+console.log(hasDriverLincense && hasGoodVision);
+console.log(hasDriverLincense || hasGoodVision);
+console.log(!hasDriverLincense);
+
+const shouldDrive = hasDriverLincense && hasGoodVision;
+
+if (shouldDrive) {
+  console.log('Selman is able to drive');
+} else {
+  console.log('Someone else should drive...');
+}
+
+const isTired = true;
+console.log(hasDriverLincense && hasGoodVision && isTired);
+
+if (hasDriverLincense && hasGoodVision && !isTired) {
+  console.log('Selman is able to drive');
+} else {
+  console.log('Someone else should drive...');
+}
+
+
+const day = 'monday';
+
+switch (day) {
+  case 'monday':
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+    break;
+  case 'friday':
+    console.log('Record videos');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy the weekends :D');
+    break;
+  default:
+    console.log('Not a valis day!');
+}
+
+if (day === 'monday') {
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('Write code examples');
+} else if (day === 'friday') {
+  console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('Enjoy the weekends :D');
+} else {
+  console.log('Not a valis day!');
+}
+
+3 + 4;
+1991;
+true && false && !false;
+
+if (23 > 10) {
+  const str = '23 is bigger';
+}
+
+const me = 'Selman';
+console.log(`Ì'm ${2025 - 1996} years old ${me}`);
 */
+const age = 29;
+age >= 18
+  ? console.log('I likee to drink wine')
+  : console.log('I like to drink water');
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'wine';
+} else {
+  drink2 = 'water';
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
