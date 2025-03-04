@@ -17,6 +17,19 @@
 
         width: 75%;
         margin: 75px auto;
+        position: relative;
+      }
+
+      body::after {
+        content: 'SALE';
+        position: absolute;
+        color: white;
+        background-color: brown;
+        padding: 10px 10px;
+        top: -20px;
+        left: -36px;
+        font-size: 12px;
+        letter-spacing: 5px;
       }
 
       h2 {
@@ -56,6 +69,54 @@
       .info:hover,
       .info:active {
         text-decoration: none;
+      }
+
+      .box-1 {
+        margin-top: 30px;
+        margin-right: 10px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: black;
+      }
+
+      .box-2 {
+        margin-right: 10px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: blue;
+      }
+
+      .box-3 {
+        margin-right: 10px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: red;
+      }
+
+      .box-4 {
+        margin-right: 10px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: yellow;
+      }
+
+      .box-5 {
+        margin-right: 10px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: green;
+      }
+
+      .box-6 {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: burlywood;
       }
 
       li {
@@ -131,6 +192,15 @@
     </p>
 
     <a class="info" href="#">More information &RightArrow;</a>
+
+    <div class="boxes">
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+      <div class="box-3"></div>
+      <div class="box-4"></div>
+      <div class="box-5"></div>
+      <div class="box-6"></div>
+    </div>
 
     <h3 class="features-head">Product Details</h3>
     <ul class="features-list">
